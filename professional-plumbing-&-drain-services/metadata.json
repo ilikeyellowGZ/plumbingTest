@@ -1,0 +1,8 @@
+
+{
+  "name": "Professional Plumbing & Drain Services",
+  "description": "A high-conversion, production-ready plumbing service website designed for local lead generation, focusing on trust, reliability, and 24/7 emergency support.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
