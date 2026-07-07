@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { NavLink, Link, useLocation } from 'react-router-dom';
 import { AnimatePresence, motion } from 'framer-motion';
 import { Clock, Mail, MapPin, Menu, Phone, X } from 'lucide-react';
-import { BRAND, NAV_LINKS, SERVICES } from '../constants';
+import { BRAND, IMAGES, NAV_LINKS, SERVICES } from '../constants';
 import { Button } from './Button';
 
 export const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
@@ -30,7 +30,7 @@ export const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) =>
       <nav className="site-nav" aria-label="Primary navigation">
         <div className="container nav-inner">
           <Link to="/" className="logo" aria-label={`${BRAND.name} home`}>
-            <span className="logo-mark" aria-hidden="true"><img src="/imgs/site-logo.svg" alt="" /></span>
+            <span className="logo-mark" aria-hidden="true"><img src={IMAGES.logo} alt="" /></span>
             <span className="logo-text">
               <span className="brand-font logo-title">{BRAND.shortName}</span>
               <span className="logo-subtitle">Plumbing & drains</span>
@@ -102,7 +102,7 @@ export const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) =>
         <div className="container footer-grid">
           <div>
             <Link to="/" className="logo">
-              <span className="logo-mark" aria-hidden="true"><img src="/imgs/site-logo.svg" alt="" /></span>
+              <span className="logo-mark" aria-hidden="true"><img src={IMAGES.logo} alt="" /></span>
               <span className="logo-text">
                 <span className="brand-font logo-title" style={{ color: 'var(--text-inverse)' }}>{BRAND.shortName}</span>
                 <span className="logo-subtitle">Plumbing & drains</span>

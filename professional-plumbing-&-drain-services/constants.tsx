@@ -16,6 +16,7 @@ import {
 const img = (name: string) => new URL(`./imgs/${name}`, import.meta.url).href;
 
 export const IMAGES = {
+  logo: img('site-logo.svg'),
   hero: img('plumber-img.webp'),
   plumber: img('41933720-close-up-of-happy-african-male-plumber-fixing-pipe-of-sink-in-kitchen.jpg'),
   tools: img('0602030005-01-Plumbers.jpg'),
@@ -221,4 +222,3 @@ export const SERVICE_AREAS = [
   'Highland Park',
   'East Industrial',
 ];
-
