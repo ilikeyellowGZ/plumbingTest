@@ -71,7 +71,18 @@ img {
   max-width: 100%;
 }
 
-button {
+button,
+a,
+.btn,
+.logo,
+.nav-link,
+.nav-phone,
+.service-card-link,
+.gallery-card,
+.faq-question,
+.lightbox-close,
+.lightbox-nav,
+.form-field select {
   cursor: pointer;
 }
 
@@ -217,10 +228,15 @@ button:disabled {
   display: grid;
   place-items: center;
   flex: 0 0 auto;
-  color: var(--text-inverse);
-  background: linear-gradient(135deg, var(--accent-primary), var(--accent-utility));
+  overflow: hidden;
+  background: transparent;
   border-radius: 8px;
   box-shadow: var(--shadow-subtle);
+}
+
+.logo-mark img {
+  width: 100%;
+  height: 100%;
 }
 
 .logo-text {
@@ -526,6 +542,10 @@ button:disabled {
 .service-card {
   overflow: hidden;
   transition: transform 180ms ease-out, box-shadow 180ms ease-out;
+}
+
+.service-card-link {
+  color: inherit;
 }
 
 .service-card:hover {

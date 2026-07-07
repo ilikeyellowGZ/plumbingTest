@@ -13,6 +13,7 @@ export const Button: React.FC<ButtonProps> = ({
   fullWidth = false,
   children,
   className = '',
+  type = 'button',
   ...props
 }) => {
   const classes = [
@@ -24,9 +25,8 @@ export const Button: React.FC<ButtonProps> = ({
   ].filter(Boolean).join(' ');
 
   return (
-    <button className={classes} {...props}>
+    <button type={type} className={classes} {...props}>
       {children}
     </button>
   );
 };
-

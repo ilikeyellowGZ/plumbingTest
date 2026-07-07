@@ -44,11 +44,11 @@ export const ContactForm: React.FC = () => {
         <div className="form-grid">
           <div className="form-field">
             <label htmlFor="name">Full name *</label>
-            <input id="name" required type="text" placeholder="John Doe" autoComplete="name" />
+            <input id="name" required type="text" placeholder="Thabo Mokoena" autoComplete="name" />
           </div>
           <div className="form-field">
             <label htmlFor="phone">Phone number *</label>
-            <input id="phone" required type="tel" placeholder="(555) 000-0000" autoComplete="tel" />
+            <input id="phone" required type="tel" placeholder="082 123 4567" autoComplete="tel" />
           </div>
         </div>
 
@@ -79,4 +79,3 @@ export const ContactForm: React.FC = () => {
     </div>
   );
 };
-

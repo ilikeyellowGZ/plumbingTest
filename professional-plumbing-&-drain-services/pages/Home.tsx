@@ -70,7 +70,7 @@ export const Home: React.FC = () => {
 
           <ScrollReveal className="grid-3">
             {SERVICES.slice(0, 6).map((service) => (
-              <article className="service-card" data-reveal key={service.id}>
+              <Link className="service-card service-card-link" data-reveal key={service.id} to="/services">
                 <div className="card-media">
                   <img src={service.image} alt={`${service.title} plumbing service`} loading="lazy" />
                   <span className="icon-badge">{service.icon}</span>
@@ -85,7 +85,7 @@ export const Home: React.FC = () => {
                     ))}
                   </ul>
                 </div>
-              </article>
+              </Link>
             ))}
           </ScrollReveal>
 
@@ -158,4 +158,3 @@ export const Home: React.FC = () => {
     </>
   );
 };
-
